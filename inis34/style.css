@@ -1,0 +1,173 @@
+/* header */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+#top-line {
+    border-top: 15px solid rgb(138, 138, 245);
+}
+
+.top-info {
+    padding: 0px 60px;
+}
+
+#top-logo {
+    max-height: 70px;
+}
+
+#top-title {
+    float: right;
+    color: rgb(23, 23, 107);
+}
+
+.top-nav {
+    display: block;
+    background-color: rgb(116, 116, 216);
+    padding: 20px;
+}
+
+/* Content */
+#cardsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card_content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card_subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card_button {
+    background-color: rgb(138, 138, 245);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card_button:hover {
+    background-color: rgb(45, 45, 177);
+}
+
+/* Shirt */
+.shirt-details-content {
+    margin: auto;
+    width: 80%;
+}
+
+#shirt-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+#shirt-image,
+#shirt-image-back {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 16px;
+}
+
+#shirt-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#shirt-colors input {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#shirt-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#shirt-info p {
+    margin-bottom: 5px;
+}
+
+#shirt-price {
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* footer */
+.bottom-nav {
+    display: block;
+    background-color: rgb(31, 31, 134);
+    padding: 20px;
+}
+
+.bottom-nav a {
+    color: white;
+    padding: 20px 80px;
+    text-decoration: none;
+}
+
+.bottom-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.185);
+}
