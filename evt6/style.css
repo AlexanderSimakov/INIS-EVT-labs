@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  padding: 20% 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.vibrate {
+  position: relative;
+  padding: 14px;
+  font-size: 18px;
+  animation-name: vibrate;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vibrate {
+  0% { left: 0; }
+  25% { left: -2px; }
+  50% { left: 0; }
+  75% { left: 2px; }
+  100% { left: 0; }
+}
+
+.vibrate:hover {
+  animation-play-state: paused;
+  background-color: #36eb66;
+}
