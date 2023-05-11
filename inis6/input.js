@@ -14,11 +14,11 @@ blocks.forEach((el) => {
     el.onclick = () => {
       el.classList.remove('active');
     }
-  })
+  });
   el.addEventListener('mousedown', (ev) => {
     startPos.block = el;
     moveBlock(ev, el);
-  })
+  });
   el.addEventListener('touchstart', (ev) => {
     startPos.block = el;
     moveBlock(ev.touches[0], el);
@@ -64,7 +64,6 @@ document.addEventListener('keydown', (ev) => {
     resetPos();
   }
 });
-
 
 function moveBlock(e, el) {
   moveAt(e, el);
