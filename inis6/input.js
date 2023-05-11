@@ -20,11 +20,8 @@ blocks.forEach((el) => {
     moveBlock(ev, el);
   })
   el.addEventListener('touchstart', (ev) => {
-    moveBlock(ev.touches[0], el);
     startPos.block = el;
-  });
-  el.addEventListener('mouseup', (ev) => {
-    startPos.block = null;
+    moveBlock(ev.touches[0], el);
   });
 })
 
@@ -44,10 +41,6 @@ document.addEventListener('touchstart', (ev) => {
   }
 });
 
-document.addEventListener('mouseup', (ev) => {
-  startPos.block = null; 
-});
-
 function resetPos() {
   startPos.block.style.left = startPos.x;
   startPos.block.style.top = startPos.y;
@@ -61,6 +54,8 @@ function resetPos() {
 document.addEventListener('touchmove', ev => {
   if (ev.touches.length < 2) {
     moveAt(ev.touches[0], startPos.block);
+  } else {
+    resetPos();
   }
 })
 
